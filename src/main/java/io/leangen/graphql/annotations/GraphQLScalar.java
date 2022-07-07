@@ -11,4 +11,5 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.PARAMETER, ElementType.TYPE_USE, ElementType.FIELD})
 public @interface GraphQLScalar {
+    boolean isStrictName() default false;
 }

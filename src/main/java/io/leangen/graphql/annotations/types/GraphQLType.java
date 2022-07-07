@@ -14,6 +14,8 @@ public @interface GraphQLType {
 
     String name() default "";
 
+    boolean isStrictName() default false;
+
     String description() default "";
 
     String[] fieldOrder() default {};
