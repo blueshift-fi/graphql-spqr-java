@@ -17,6 +17,8 @@ import java.lang.annotation.Target;
 @Target({ElementType.PARAMETER, ElementType.TYPE_USE, ElementType.FIELD, ElementType.TYPE})
 public @interface GraphQLId {
     String RELAY_ID_FIELD_NAME = "id"; //The name of the ID field, as defined by the Node interface
-    
+
     boolean relayId() default false;
+
+    String description() default "";
 }
